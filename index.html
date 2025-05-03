@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smartcube Tunneling Service</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-b from-purple-600 to-indigo-700 text-white">
+    <!-- Wrapper keseluruhan -->
+    <div class="max-w-7xl mx-auto px-6 lg:px-20 py-6">
+  
+      <!-- Navbar -->
+      <nav class="flex justify-between items-center py-1">
+        <div class="text-2xl font-bold flex items-center space-x-2">
+            <img src="smartcubelogo.png" class="h-20 w-auto">
+    
+        </div>
+      <!-- Hamburger button (Mobile) -->
+  <div class="md:hidden">
+    <button id="menu-toggle" class="p-2 bg-white rounded text-indigo-600 focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Menu (Desktop) -->
+  <ul class="hidden md:flex space-x-6 text-lg">
+    <li><a href="#" class="hover:text-gray-300">Home</a></li>
+    <li><a href="#" class="hover:text-gray-300">Layanan</a></li>
+    <li><a href="#" class="hover:text-gray-300">Fitur</a></li>
+    <li><a href="#" class="hover:text-gray-300">Harga</a></li>
+    <li><a href="#" class="hover:text-gray-300">Tentang</a></li>
+  </ul>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden bg-white text-black px-6 py-4 space-y-2">
+  <a href="#" class="block">Home</a>
+  <a href="#" class="block">Layanan</a>
+  <a href="#" class="block">Fitur</a>
+  <a href="#" class="block">Harga</a>
+  <a href="#" class="block">Tentang</a>
+</div>
+
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("mobile-menu");
+
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+</script>
+      <!-- Hero -->
+      <section class="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 py-16">
+        <div class="w-full lg:w-1/2 space-y-6">
+          <span class="bg-green-200 text-green-800 text-xs font-semibold px-3 py-1 rounded-full inline-block">
+            INFO: Daftar & coba selama 7 hari
+          </span>
+          <h1 class="text-2xl lg:text-3xl font-bold leading-tight">
+           Layanan Ekstra untuk keamanan privasi router dan devicemu
+          </h1>
+          <p class="text-lg text-gray-200">
+            Website penyedia layanan VPN Remote, HTTP Reverse Proxy & Routing over VPN untuk router / device kamu.
+          </p>
+          <button class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-full shadow-lg">
+             Mulai Sekarang
+          </button>
+        </div>
+        <div class="w-full lg:w-1/2">
+          <img src="12345.png" alt="Illustration" class="w-full max-w-md mx-auto">
+        </div>
+      </section>
+  
+      <section class="bg-gray-50 rounded-2xl  py-6 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+          <h2 class="text-3xl text-gray-800 font-bold mb-2">Layanan Kami</h2>
+          <p class="text-gray-800 mb-5">Beberapa layanan unggulan dari FreeDDNS</p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- VPN Remote -->
+            <div class="flex flex-col items-center">
+              <div class="bg-purple-100 p-4 rounded-full mb-4">
+                <img src="vpn (1).png" alt="Wireguard" class="h-8">
+              </div>
+              <h3 class="text-lg font-semibold text-gray-800">VPN Remote</h3>
+            </div>
+      
+            <!-- Routing Over VPN -->
+            <div class="flex flex-col items-center">
+              <div class="bg-purple-100 p-4 rounded-full mb-4">
+                <img src="routing.png" alt="Wireguard" class="h-8">
+              </div>
+              <h3 class="text-lg font-semibold text-gray-800">Routing Over VPN</h3>
+            </div>
+      
+            <!-- Reverse Proxy -->
+            <div class="flex flex-col items-center">
+              <div class="bg-purple-100 p-4 rounded-full mb-4">
+                <img src="proxy.png" alt="Wireguard" class="h-8">
+              </div>
+              <h3 class="text-lg font-semibold text-gray-800">Reverse Proxy</h3>
+            </div>
+      
+          </div>
+        </div>
+      </section>
+      
+
+      <!-- Statistik -->
+      <section class="bg-white rounded-2xl py-20 px-4 text-center mt-10">
+        <h2 class="text-3xl text-gray-800 font-bold mb-4">Mengapa Memilih VPN Remote <span class="text-indigo-600">SmartCube?</span></h2>
+        <p class="text-gray-500 mb-16">Berikut adalah fitur unggulan yang membuat layanan kami berbeda dan layak dicoba.</p>
+      
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto justify-items-center">
+            <!-- Fast Service -->
+            <div class="text-center">
+              <div class="mx-auto mb-4 w-14 h-14 bg-indigo-100 text-indigo-600 flex items-center justify-center rounded-full">
+                ⚡
+              </div>
+              <h3 class="text-lg font-bold mb-2">Fast Service</h3>
+              <p class="text-gray-600 text-sm">
+                Kami Menyediakan kualitas server vpn dengan koneksi hingga 100Mbps.
+              </p>
+            </div>
+        
+            <!-- Free Support -->
+            <div class="text-center">
+              <div class="mx-auto mb-4 w-14 h-14 bg-indigo-100 text-indigo-600 flex items-center justify-center rounded-full">
+                🎧
+              </div>
+              <h3 class="text-lg font-bold mb-2">Free Support</h3>
+              <p class="text-gray-600 text-sm">
+                Kami menyiapkan support gratis, kami biasa menyebutnya "Chat System" yang dapat membantu anda dalam mensolved masalah.
+              </p>
+            </div>
+          </div>
+      </section>
+      
+
+      <!-- Section: Harga -->
+<section class="bg-white rounded-2xl  py-20 px-4 text-center mt-10">
+    <h2 class="text-3xl font-bold text-gray-800 mb-2">Paket Harga <span class="text-indigo-600">Smartcube</span></h2>
+    <p class="text-gray-500 mb-12">Berikut ini pilihan paket harga dari layanan kami.</p>
+  
+    <div class="flex flex-col md:flex-row justify-center items-start gap-10 max-w-6xl mx-auto">
+      <!-- Paket Reguler -->
+      <div class="flex-1 bg-gray-50 rounded-2xl p-6 shadow-lg">
+        <div class="text-4xl font-bold text-indigo-600 mb-2">Rp 15.000</div>
+        <h3 class="text-xl font-semibold text-indigo-600 mb-2">Reguler</h3>
+        <p class="text-gray-600 text-sm mb-4">Akses remote VPN dan reverse proxy hingga 3 port public.</p>
+      </div>
+  
+      <!-- Paket Premium -->
+      <div class="flex-1 bg-gray-50 rounded-2xl p-6 shadow-lg">
+        <div class="text-4xl font-bold text-indigo-600 mb-2">Rp 20.000</div>
+        <h3 class="text-xl font-semibold text-indigo-600 mb-2">Premium</h3>
+        <p class="text-gray-600 text-sm mb-4">Akses remote VPN, reverse proxy hingga 6 port public dan dukungan Public IPV6</p>
+      </div>
+  
+      <!-- Paket Custom -->
+      <div class="flex-1 bg-gray-50 rounded-2xl p-6 shadow-lg">
+        <div class="text-4xl font-bold text-indigo-600 mb-2">Custom</div>
+        <h3 class="text-xl font-semibold text-indigo-600 mb-2">Enterprise</h3>
+        <p class="text-gray-600 text-sm mb-4">Solusi VPN dan tunneling sesuai kebutuhan perusahaan.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Section: Partner -->
+  
+  <section class="py-20 px-4 rounded-2xl  bg-gradient-to-b mt-10 from-white to-indigo-100">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl font-bold text-gray-800">Kapan Waktu Tepat Menggunakan <span class="text-indigo-600">SmartCube?</span></h2>
+      <p class="text-gray-500 mt-2">Beberapa skenario umum di mana layanan kami akan sangat membantu kebutuhan akses jarak jauh Anda.</p>
+    </div>
+  
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+      <!-- Akses Perangkat Jarak Jauh -->
+      <div class="bg-white rounded-xl shadow-md p-6 flex items-start gap-4">
+        <div class="text-indigo-600 bg-indigo-100 p-3 rounded-lg text-xl">
+          🔌
+        </div>
+        <div>
+          <h3 class="font-semibold text-gray-800  text-lg mb-1">Akses Perangkat Jarak Jauh</h3>
+          <p class="text-gray-600 text-sm">Cocok untuk kamu yang perlu mengontrol server, router, atau kamera dari luar jaringan rumah atau kantor.</p>
+        </div>
+      </div>
+  
+      <!-- Konversi IP Dinamis ke Nama DNS -->
+      <div class="bg-white rounded-xl shadow-md p-6 flex items-start gap-4">
+        <div class="text-indigo-600 bg-indigo-100 p-3 rounded-lg text-xl">
+          🌐
+        </div>
+        <div>
+          <h3 class="font-semibold text-gray-800  text-lg mb-1">Mengonline kan Private Server</h3>
+          <p class="text-gray-600 text-sm">Tidak Perlu sewa Public IP. hanya dengan smartcube reverse proxy. server lokal mu (database, http, dns, rdp dll) bisa online secara aman</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-white rounded-2xl  py-20 text-center mt-10">
+    <h2 class="text-2xl font-semibold mb-8">Our <span class="text-indigo-600">Partner</span></h2>
+    <div class="flex flex-wrap justify-center items-center gap-10">
+      <img src="mikrotik.svg" alt="Mikrotik" class="h-12">
+      <img src="cloudflare.png" alt="Cloudflare" class="h-12">
+      <img src="wireguard.svg" alt="Wireguard" class="h-12">
+    </div>
+  </section>
+  <section class="py-20 px-4 rounded-2xl bg-gradient-to-b mt-10 from-white to-indigo-100">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl text-gray-800  font-bold text-center mb-6">Tentang Kami</h2>
+        <div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg">
+            <h3 class="text-2xl font-semibold mb-4">Pendahuluan</h3>
+            <p class="text-lg leading-relaxed">
+                SmartCube merupakan sebuah project dari Mahasiswa D3 Sistem Informasi UBHINUS Malang yang tujuannya untuk Tugas Mata Kuliah Kewirausahaan dan juga mengurangi penggunaan IPv4 yang sudah semakin langka.
+            </p>
+        </div>
+          <!-- Tim Kami -->
+           <!-- Tim Kami -->
+        <div class="bg-white text-gray-800 p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-semibold mb-6 text-center">Tim Kami</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-6">
+
+              <!-- Anggota 1 -->
+              <div class="flex flex-col items-center text-center">
+                  <img src="https://via.placeholder.com/120" class="w-28 h-28 rounded-full mb-3 shadow-md" alt="Foto Anggota 1">
+                  <h4 class="font-semibold text-lg">Rifqi Prasetya Hidayat</h4>
+                  <p class="text-sm text-gray-600">231221003</p>
+              </div>
+
+              <!-- Anggota 2 -->
+              <div class="flex flex-col items-center text-center">
+                  <img src="https://via.placeholder.com/120" class="w-28 h-28 rounded-full mb-3 shadow-md" alt="Foto Anggota 2">
+                  <h4 class="font-semibold text-lg">Syazana Seyhire</h4>
+                  <p class="text-sm text-gray-600">231221006</p>
+              </div>
+
+              <!-- Anggota 3 -->
+              <div class="flex flex-col items-center text-center">
+                  <img src="https://via.placeholder.com/120" class="w-28 h-28 rounded-full mb-3 shadow-md" alt="Foto Anggota 3">
+                  <h4 class="font-semibold text-lg">Faisal Tanjung</h4>
+                  <p class="text-sm text-gray-600">231221007</p>
+              </div>
+
+              <div class="flex flex-col items-center text-center">
+                <img src="https://via.placeholder.com/120" class="w-28 h-28 rounded-full mb-3 shadow-md" alt="Foto Anggota 3">
+                <h4 class="font-semibold text-lg">Daffa Aditya Purwanto</h4>
+                <p class="text-sm text-gray-600">231221008</p>
+            </div>
+
+            <div class="flex flex-col items-center text-center">
+              <img src="https://via.placeholder.com/120" class="w-28 h-28 rounded-full mb-3 shadow-md" alt="Foto Anggota 3">
+              <h4 class="font-semibold text-lg">Maulina Roro M A</h4>
+              <p class="text-sm text-gray-600">231221010</p>
+          </div>
+          </div>
+      </div>
+        </div>
+    </div>
+</section>
+
+    </div>
+  </body>
+  
+  <footer class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white mt-20">
+    <div class="max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Tentang -->
+        <div>
+            <h4 class="text-xl font-semibold mb-4">SmartCube</h4>
+            <p class="text-sm leading-relaxed">
+                Solusi VPN dan Tunneling untuk menghubungkan jaringan lokal Anda ke internet dengan aman dan fleksibel. Dikembangkan oleh mahasiswa D3 Sistem Informasi UBHINUS Malang.
+            </p>
+        </div>
+
+        <!-- Navigasi -->
+        <div>
+            <h4 class="text-xl font-semibold mb-4">Navigasi</h4>
+            <ul class="space-y-2 text-sm">
+                <li><a href="/" class="hover:underline">Beranda</a></li>
+                <li><a href="#layanan" class="hover:underline">Layanan</a></li>
+                <li><a href="#tentang" class="hover:underline">Tentang Kami</a></li>
+                <li><a href="#kontak" class="hover:underline">Kontak</a></li>
+            </ul>
+        </div>
+
+        <!-- Kontak -->
+        <div>
+            <h4 class="text-xl font-semibold mb-4">Kontak Kami</h4>
+            <p class="text-sm">Email: <a href="mailto:info@smartcube.id" class="underline">info@smartcube.id</a></p>
+            <p class="text-sm mt-2">WhatsApp: <a href="https://wa.me/6281234567890" class="underline">+62 812-3456-7890</a></p>
+            <p class="text-sm mt-2">Instagram: <a href="https://instagram.com/smartcube.id" class="underline">@smartcube.id</a></p>
+           <br>
+            <div class=" text-sm text-white/80">
+              &copy; 2025 SmartCube. All rights reserved.
+          </div>
+        
+        </div>
+    </div>
+
+   
+</footer>
+
+
+</html>
